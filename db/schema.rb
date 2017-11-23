@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171123212908) do
+ActiveRecord::Schema.define(version: 20171123215213) do
+
+  create_table "aeronaves", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "tripulantes"
+    t.string   "tamanho"
+    t.string   "numero"
+    t.string   "chassi"
+    t.string   "horasvoo"
+    t.string   "qtdmotor"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "alunos", force: :cascade do |t|
     t.string   "nome"
